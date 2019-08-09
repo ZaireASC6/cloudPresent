@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="lib/css/loginStyles.css">
-    <title>CloudPresent - Login</title>
+    <link rel="stylesheet" href="lib/css/signUpStyles.css">
+    <title>CloudPresent - Sign Up</title>
     <meta name="google-signin-client_id" content="1093238211073-kie44ss39m3e0ubj1g50nr5lv4t4r4rv.apps.googleusercontent.com">
     <script src="lib/js/bcrypt.min.js"></script>
-    <script src="lib/js/loginScripts.js" defer></script>
+    <script src="lib/js/signUpScripts.js" defer></script>
 
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-app.js"></script>
@@ -35,28 +35,34 @@
 </head>
 
 <body>
-    <div class="box">
-        <div class="title">
-            <h1>Login</h1>
+    <div class="page">
+        <div class="box">
+            <div id="wrong">
+            </div>
+            <div class="title">
+                <h1>Sign Up</h1>
+            </div>
+            <div class="name">
+                <input id="firstName" placeholder="First name">
+                <input id="lastName" placeholder="Last name">
+            </div>
+            <div class="email">
+                <input id="emailInput" placeholder="johndoe@example.com">
+            </div>
+            <div class="password">
+                <input type="password" id="passwordInput" placeholder="New password">
+            </div>
+            <div class="passwordCon">
+                <input type="password" id="passwordConfirm" placeholder="Confirm password">
+            </div>
+            <div class="submit">
+                <button id="submit_button">Submit</button>
+            </div>
+            <div class="or">
+                <h1>OR</h1>
+            </div>
+            <div id="my-signin2"></div>
         </div>
-        <div class="email">
-            <h1>Email Address: </h1>
-            <input id="emailInput" placeholder="Email Address">
-        </div>
-        <div class="password">
-            <h1>Password: </h1>
-            <input type="password" id="passwordInput" placeholder="password">
-        </div>
-        <div class="submit">
-            <button id="submit_button">Submit</button>
-        </div>
-        <div class="or">
-            <h1>OR</h1>
-        </div>
-        <div class="signUp">
-            <a href="signUp.html">Sign Up Here</a>
-        </div>
-        <div id="my-signin2"></div>
     </div>
     <script src="https://apis.google.com/js/platform.js" async defer></script>
     <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
