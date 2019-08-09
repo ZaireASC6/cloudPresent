@@ -1,3 +1,10 @@
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
 .box {
     display: flex;
     flex-direction: column;
@@ -6,13 +13,7 @@
     width: 30vw;
 }
 
-.username {
-    display: flex;
-    flex-flow: row;
-    align-items: center;
-    font-size: 12px;
-}
-
+.email,
 .password {
     display: flex;
     flex-flow: row;
@@ -20,10 +21,7 @@
     font-size: 12px;
 }
 
-#usernameInput {
-    height: 30%;
-}
-
+#emailInput,
 #passwordInput {
     height: 30%;
 }

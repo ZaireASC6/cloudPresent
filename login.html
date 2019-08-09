@@ -35,28 +35,32 @@
 </head>
 
 <body>
-    <div class="box">
-        <div class="title">
-            <h1>Login</h1>
+    <div class="page">
+        <div class="box">
+            <div id="error">
+            </div>
+            <div class="title">
+                <h1>Login</h1>
+            </div>
+            <div class="email">
+
+                <input id="emailInput" placeholder="Email Address">
+            </div>
+            <div class="password">
+
+                <input type="password" id="passwordInput" placeholder="password">
+            </div>
+            <div class="submit">
+                <button id="submit_button">Submit</button>
+            </div>
+            <div class="or">
+                <h1>OR</h1>
+            </div>
+            <div id="my-signin2"></div>
+            <div class="signUp">
+                <a href="signUp.html">Sign Up Here</a>
+            </div>
         </div>
-        <div class="email">
-            <h1>Email Address: </h1>
-            <input id="emailInput" placeholder="Email Address">
-        </div>
-        <div class="password">
-            <h1>Password: </h1>
-            <input type="password" id="passwordInput" placeholder="password">
-        </div>
-        <div class="submit">
-            <button id="submit_button">Submit</button>
-        </div>
-        <div class="or">
-            <h1>OR</h1>
-        </div>
-        <div class="signUp">
-            <a href="signUp.html">Sign Up Here</a>
-        </div>
-        <div id="my-signin2"></div>
     </div>
     <script src="https://apis.google.com/js/platform.js" async defer></script>
     <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
