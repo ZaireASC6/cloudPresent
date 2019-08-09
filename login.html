@@ -7,10 +7,31 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="lib/css/loginStyles.css">
     <title>CloudPresent - Login</title>
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
-    <meta name="google-signin-client_id"
-        content="1093238211073-kie44ss39m3e0ubj1g50nr5lv4t4r4rv.apps.googleusercontent.com">
+    <meta name="google-signin-client_id" content="1093238211073-kie44ss39m3e0ubj1g50nr5lv4t4r4rv.apps.googleusercontent.com">
+    <script src="lib/js/bcrypt.min.js"></script>
     <script src="lib/js/loginScripts.js" defer></script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-database.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyD0msy8Z6zMOuDZ-wueD4OQH8QmOvVSKqs",
+            authDomain: "cloudpresent-b29bf.firebaseapp.com",
+            databaseURL: "https://cloudpresent-b29bf.firebaseio.com",
+            projectId: "cloudpresent-b29bf",
+            storageBucket: "",
+            messagingSenderId: "1093238211073",
+            appId: "1:1093238211073:web:c82beca89a5183c9"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
 </head>
 
 <body>
@@ -18,13 +39,13 @@
         <div class="title">
             <h1>Login</h1>
         </div>
-        <div class="username">
-            <h1>Username: </h1>
-            <input id="usernameInput" placeholder="username">
+        <div class="email">
+            <h1>Email Address: </h1>
+            <input id="emailInput" placeholder="Email Address">
         </div>
         <div class="password">
             <h1>Password: </h1>
-            <input id="passwordInput" placeholder="password">
+            <input type="password" id="passwordInput" placeholder="password">
         </div>
         <div class="submit">
             <button>Submit</button>
@@ -32,8 +53,10 @@
         <div class="or">
             <h1>OR</h1>
         </div>
-        <div class="g-signin2" data-onsuccess="onSignIn"></div>
+        <div id="my-signin2"></div>
     </div>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
 </body>
 
 </html>
