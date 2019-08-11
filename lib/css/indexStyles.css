@@ -1,0 +1,46 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: #F90093;
+    padding: 0 10px;
+    height: 10vh;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #F90093;
+}
+
+.content {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    background-image: radial-gradient(circle, white, #FDCDE9, white);
+}
+
+#appImg {
+    height: 150px;
+    width: auto;
+}
+
+body {
+    margin: 0px;
+}
+
+#break {
+    height: 30px;
+}
+
+#toCloud {
+    background-image: linear-gradient(white, #FDDAEC, #f900bc80);
+    /* height: 100px;
+    width: 500px; */
+    padding: 5px;
+    border: none;
+    /* border-radius: 3px; */
+    /* font-size: 50px; */
+}

@@ -1,15 +1,36 @@
+body {
+    padding: 0px;
+    margin: 0;
+}
+
 .page {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.nav {
+    background-color: black;
+    width: 100vw;
+    height: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+}
+
+#logo {
+    height: 50px;
+    width: auto;
 }
 
 .box {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: lightgrey;
+    background-color: #f90093;
+    border-radius: 22px;
     width: 30vw;
 }
 
